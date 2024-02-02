@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="weather-app">
+        <header>
+    <form  id="search-form">
+        <input
+        type="search" placeholder="Enter a city..."
+        required
+        id="search-input"
+        />
+        <input type="submit" value="Search" class="search-button" />
+    </form>
+        </header>
+        <main>
+            <div class="current-weather">
+                <div>
+    <h1 class="current-cities" id="current-city">
+        Paris
+    </h1>
+    <p class="current-details">
+        <span id="current-date"></span>, moderate rain
+        <br />
+        Humidity: <strong> 85%</strong> ,Wind: <strong> 10 mph </strong>
+    </p>
+    </div>
+        <div class="current-temperature">
+            <span class="current-temperature-icon">☀️</span>
+            <span class="current-temperature-value" id="temperature"> 65</span>
+            <span class="current-temperature-unit">°F</span>
+        <br />
+        </div>
+        <ul>
+            <li>
+                Sun ⛅
+                <br />
+                <strong> 65°F</strong>- 55°F
+            </li>
+            <li>
+                Mon ⛅
+                <br />
+                <strong> 65°F</strong>- 55°F
+            </li>
+            <li>
+                Tue ⛅
+                <br />
+                <strong> 65°F</strong>- 55°F
+            </li>
+            <li>
+                Wed ⛅
+                <br />
+                <strong> 65°F</strong>- 55°F
+            </li>
+            <lil>
+                Thu ⛅
+                <br />
+                <strong> 65°F</strong>- 55°F
+            </lil>
+        </ul>
+    </main>
+    </div>
+    <footer>
+        <p>
+        This project was coded by
+         <a href="#" target="_blank">Yasmyne Edwards</a> and is
+        <a href="#" target="_blank"> on GitHub</a> and
+        <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+    </footer>
+</body>
+ <script src="index.js"></script>
+</html>
